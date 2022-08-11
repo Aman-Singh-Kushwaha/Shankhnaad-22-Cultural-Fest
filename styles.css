@@ -1,0 +1,85 @@
+.body{
+    margin: 0px auto;
+    background-color: #1E1E1E ;
+    display:block;
+}
+
+.landing{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    left: 0px;
+    top: -2px;
+    z-index: -1;
+    background-image: url(/images/Landing_Bg.png);
+}
+
+span{
+    color:#ffffff;
+    font-size: 32px;
+    font-family:'Gill Sans', 'Gill Sans MT', 'Calibri', 'Trebuchet MS', sans-serif;
+}
+
+.navbar{
+    width: 85%;
+    margin: auto;
+    padding: 32px 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navbar ul li{
+    list-style: none;
+    display: inline-block;
+    margin: 0 20px;
+    position: relative;
+}
+
+.navbar ul li a{
+    color: #ffffff;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-family:'Gill Sans', 'Gill Sans MT', 'Calibri', 'Trebuchet MS', sans-serif;
+
+}
+
+.navbar ul li::after{
+    content: '';
+    height:3px;
+    width: 0;
+    background: #179BB1;
+    position: absolute;
+    left: 0;
+    bottom: -11px;
+    transition: 0.5s;
+}
+
+.navbar ul li:hover::after{
+    width: 100%;
+}
+
+/*            ------------Side Bar-----------                          */
+
+.socialicon {
+    position: fixed;
+    right: 4vw;
+    bottom: 0;
+    align-items: center;
+}
+.iconsdiv, .socialicon {
+    display: flex;
+    flex-direction: column;
+}
+.iconsdiv>a {
+    padding: 0px 0px 60px 0px;
+    color: #ffffff;
+    font-size: 1.1em;
+}
+.line {
+    width: 3px;
+    border-radius: 5px;
+    margin-bottom: 55px;
+    height: 217px;
+    background: #ffffff;
+}
